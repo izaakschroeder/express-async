@@ -1,6 +1,6 @@
 {
 	"name": "express-async",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Like async.js but for express.",
 	"author": "Izaak Schroeder <izaak.schroeder@gmail.com>",
 	"keywords": [ "express", "async", "serial", "parallel" ],
