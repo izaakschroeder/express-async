@@ -50,4 +50,14 @@ describe('util', function() {
 			util.checkMiddlewareList([fn1, fn2]);
 		});
 	});
+
+	describe('.normalizeMiddlewareList', function() {
+		it('should mash arguments to single array', function() {
+			function check() {
+				return util.normalizeMiddlewareList(arguments);
+			}
+
+			expect(check(fn1, [fn2, fn3])).to.deep.equal([fn1, fn2, fn3]);
+		});
+	});
 });
